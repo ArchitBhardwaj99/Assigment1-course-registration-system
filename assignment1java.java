@@ -8,7 +8,6 @@ class Course {
     String instructor;
     int credits;
 
-    // Constructor
     Course(int courseId, String courseName, String instructor, int credits) {
         this.courseId = courseId;
         this.courseName = courseName;
@@ -16,7 +15,6 @@ class Course {
         this.credits = credits;
     }
 
-    // Display Method
     void display() {
         System.out.println("Course ID: " + courseId);
         System.out.println("Course Name: " + courseName);
@@ -31,7 +29,6 @@ public class Main {
     static ArrayList<Course> courses = new ArrayList<>();
     static Scanner sc = new Scanner(System.in);
 
-    // CREATE
     static void addCourse() {
 
         System.out.print("Enter Course ID: ");
@@ -53,7 +50,6 @@ public class Main {
         System.out.println("Course Added Successfully!");
     }
 
-    // READ
     static void viewCourses() {
 
         if (courses.isEmpty()) {
@@ -66,7 +62,6 @@ public class Main {
         }
     }
 
-    // UPDATE
     static void updateCourse() {
 
         System.out.print("Enter Course ID to Update: ");
@@ -100,7 +95,6 @@ public class Main {
         }
     }
 
-    // DELETE
     static void deleteCourse() {
 
         System.out.print("Enter Course ID to Delete: ");
